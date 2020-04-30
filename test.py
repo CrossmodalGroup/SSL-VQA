@@ -94,8 +94,8 @@ if __name__ == '__main__':
 
         model.train(False)
 
-        logits, qIds, att, bboxes = get_logits(model, eval_loader)
-        results = make_json(logits, qIds, att, bboxes, eval_loader)
+        logits, qIds = get_logits(model, eval_loader)
+        results = make_json(logits, qIds, eval_loader)
         model_label = opt.label 
         
         if opt.logits:
