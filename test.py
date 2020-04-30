@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
     dictionary = Dictionary.load_from_file(opt.dataroot + 'dictionary.pkl')
     opt.ntokens = dictionary.ntoken
-    eval_dset = VQAFeatureDataset('test', dictionary, opt.dataroot, opt.img_root, ratio=opt.ratio, adaptive=False)
+    eval_dset = VQAFeatureDataset('test', dictionary, opt.dataroot, opt.img_root, 1.0, adaptive=False)
 
     n_device = torch.cuda.device_count()
     batch_size = opt.batch_size * n_device
