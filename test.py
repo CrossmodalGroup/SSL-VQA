@@ -56,7 +56,7 @@ def get_logits(model, dataloader):
 
 def make_json(logits, qIds, dataloader):
     utils.assert_eq(logits.size(0), len(qIds))
-    utils.assert_eq(logits.size(0), att.size(0))
+ 
     results = []
     for i in range(logits.size(0)):
         result = {}
