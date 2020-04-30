@@ -26,8 +26,15 @@ cd ..
 ```
 
 ## Training
+* train our model with multi-label VQA loss
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ --img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3
+CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
+--img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss
+```
+* train our model with corss-entropy VQA loss
+```
+CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
+--img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 1.2 --ce_loss
 ```
 
 ## Evaluation
@@ -38,6 +45,13 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataroot data/vqacp2/ --img_root data/co
 * Compute detailed accuracy for each answer type:
 ```
 python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/vqacp2/
+```
+
+## evaluate our method based on small training set
+Train the model with 80% of the original training set
+```
+CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
+--img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss --ratio 0.8
 ```
 
 
