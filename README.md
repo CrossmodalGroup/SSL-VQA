@@ -36,6 +36,12 @@ CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/
 CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
 --img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 1.2 --ce_loss
 ```
+## Evaluate our method based on small training set
+Train the model with 80% of the original training set
+```
+CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
+--img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss --ratio 0.8
+```
 
 ## Evaluation
 * A json file of results from the test set can be produced with:
@@ -47,11 +53,6 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataroot data/vqacp2/ --img_root data/co
 python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/vqacp2/
 ```
 
-## evaluate our method based on small training set
-Train the model with 80% of the original training set
-```
-CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
---img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss --ratio 0.8
-```
+
 
 
