@@ -34,8 +34,8 @@ def parse_opt():
                     help='number of epochs for normal training')
     parser.add_argument('--ratio', type=float, default=1,
                     help='ratio of training set used')
-    parser.add_argument('--ml_loss', type=bool, default=True,
-                    help='vqa loss (cross-entropy loss or multi-label loss)')
+    parser.add_argument('--ml_loss', dest='ml_loss', action='store_true')
+    parser.add_argument('--ce_loss', dest='ce_loss', action='store_true')
 
     parser.add_argument('--batch_size', type=int, default=256,
                     help='minibatch size')
