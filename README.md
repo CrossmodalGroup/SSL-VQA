@@ -26,12 +26,12 @@ cd ..
 ```
 
 ## Training
-* train our model with multi-label VQA loss
+* Train our model with multi-label VQA loss
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
 --img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss
 ```
-* train our model with corss-entropy VQA loss
+* Train our model with corss-entropy VQA loss
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
 --img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 1.2 --ce_loss
