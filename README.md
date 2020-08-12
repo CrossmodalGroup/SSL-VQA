@@ -53,8 +53,12 @@ python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/v
 ```
 
 ## Pretrained model & Well-trained model
-If you don't want to train from scratch, you can download the pretrained base model from [here]()(for ml_loss), and finetune it with our self-supervised loss. 
-A well-trained model (for ml_loss) can be found [here](https://drive.google.com/file/d/1s9Q-26uNooXXLyRLF3-vfY1brvGf-Zia/view?usp=sharing), and the test results file produced by it can be found [here](https://drive.google.com/file/d/1MXJ94BaFyhAOD2yTN1ROUim4vQsDEc1M/view?usp=sharing) and its performance is as follows:
+If you don't want to train from scratch, you can download the pretrained base model from [here]()(for ml_loss), and fine-tune it with our self-supervised loss as below:
+```
+CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
+--img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss --checkpoint_path ml_pretrained.pth
+```
+A well-trained model (for ml_loss) can be found [here](https://drive.google.com/file/d/1s9Q-26uNooXXLyRLF3-vfY1brvGf-Zia/view?usp=sharing). The test results file produced by it can be found [here](https://drive.google.com/file/d/1MXJ94BaFyhAOD2yTN1ROUim4vQsDEc1M/view?usp=sharing) and its performance is as follows:
 ```
 Overall score: 58.58
 Yes/No: 87.47 Num: 40.3 other: 48.45
