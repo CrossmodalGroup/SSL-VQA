@@ -52,6 +52,8 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataroot data/vqacp2/ --img_root data/co
 python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/vqacp2/
 ```
 
-
+## Pretrained model & Well-trained model
+If you don't want to train from scratch, you can download the pretrained base model from [here](https://github.com/jialinwu17/self_critical_vqa)(for ml_loss) and [here](https://github.com/jialinwu17/self_critical_vqa)(for ce_loss), and finetune it with our self-supervised loss. 
+A well-pretrained model (for ml_loss) can be found [here](https://github.com/jialinwu17/self_critical_vqa), and the test result file produced by it can be found [here](https://github.com/jialinwu17/self_critical_vqa) and its performance is as follows:
 
 
