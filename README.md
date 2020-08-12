@@ -53,7 +53,20 @@ python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/v
 ```
 
 ## Pretrained model & Well-trained model
-If you don't want to train from scratch, you can download the pretrained base model from [here](https://github.com/jialinwu17/self_critical_vqa)(for ml_loss), and finetune it with our self-supervised loss. 
-A well-trained model (for ml_loss) can be found [here](https://github.com/jialinwu17/self_critical_vqa), and the test results file produced by it can be found [here](https://github.com/jialinwu17/self_critical_vqa) and its performance is as follows:
+If you don't want to train from scratch, you can download the pretrained base model from [here]()(for ml_loss), and finetune it with our self-supervised loss. 
+A well-trained model (for ml_loss) can be found [here](https://drive.google.com/file/d/1s9Q-26uNooXXLyRLF3-vfY1brvGf-Zia/view?usp=sharing), and the test results file produced by it can be found [here](https://drive.google.com/file/d/1MXJ94BaFyhAOD2yTN1ROUim4vQsDEc1M/view?usp=sharing) and its performance is as follows:
+```overall score: 58.58
+Yes/No: 87.47 Num: 40.3 other: 48.45
+```
+
+
+## Reference
+If you found this code is useful, please cite the following paper:
+```
+@article{zhuovercoming,
+  title={Overcoming Language Priors with Self-supervised Learning for Visual Question Answering},
+  author={Zhu, Xi and Mao, Zhendong and Liu, Chunxiao and Zhang, Peng and Wang, Bin and Zhang, Yongdong}
+}
+```
 
 
