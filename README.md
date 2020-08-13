@@ -53,7 +53,7 @@ python comput_score.py --input saved_models_cp2/result/XX.json --dataroot data/v
 ```
 
 ## Pretrained model & Well-trained model
-If you don't want to train from scratch, you can download the pretrained base model from [here]()(for ml_loss), and fine-tune it with our self-supervised loss as below:
+If you don't want to train from scratch, you can download the pretrained base model from [here](https://drive.google.com/file/d/1QRYHnmZ7Epauf-ooUkVL4IiQliRpny2c/view?usp=sharing)(for ml_loss), and fine-tune it with our self-supervised loss as below:
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py --dataroot data/vqacp2/ 
 --img_root data/coco/ --output saved_models_cp2/ --self_loss_weight 3 --ml_loss --checkpoint_path ml_pretrained.pth
