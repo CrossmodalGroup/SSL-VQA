@@ -1,5 +1,5 @@
 # SSL-VQA
-Here is code for our IJCAI 2020 paper [Overcoming Language Priors with Self-supervised Learning for Visual Question Answering](https://www.ijcai.org/Proceedings/2020/0151.pdf). This repository contains code modified from [here](https://github.com/jialinwu17/self_critical_vqa), many thanks!
+Here is the implementation of our IJCAI 2020 paper [Overcoming Language Priors with Self-supervised Learning for Visual Question Answering](https://www.ijcai.org/Proceedings/2020/0151.pdf). This repository contains code modified from [here](https://github.com/jialinwu17/self_critical_vqa), many thanks!
 
 ## Requirements
 * python 3.6.8
