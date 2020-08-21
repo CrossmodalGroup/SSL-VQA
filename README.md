@@ -68,9 +68,19 @@ Yes/No: 87.47 Num: 40.3 other: 48.45
 ## Reference
 If you found this code is useful, please cite the following paper:
 ```
-@article{zhuovercoming,
-  title={Overcoming Language Priors with Self-supervised Learning for Visual Question Answering},
-  author={Zhu, Xi and Mao, Zhendong and Liu, Chunxiao and Zhang, Peng and Wang, Bin and Zhang, Yongdong}
+@inproceedings{ijcai2020-151,
+  title     = {Overcoming Language Priors with Self-supervised Learning for Visual Question Answering},
+  author    = {Zhu, Xi and Mao, Zhendong and Liu, Chunxiao and Zhang, Peng and Wang, Bin and Zhang, Yongdong},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  editor    = {Christian Bessiere}	
+  pages     = {1083--1089},
+  year      = {2020},
+  month     = {7},
+  note      = {Main track}
+  doi       = {10.24963/ijcai.2020/151},
+  url       = {https://doi.org/10.24963/ijcai.2020/151},
 }
 ```
 
